@@ -11,7 +11,7 @@ class PvtRequest(BaseModel):
     GammaOil: float = Field(title="Относительная плотность нефти, доли", gt=0)
     GammaGas: float = Field(title="Относительная плотность газа, доли", gt=0)
     GammaWat: float = Field(title="Относительная плотность воды, доли", gt=0)
-    Wct: float = Field(title="Обводненности, %", ge=0, le=1)
+    Wct: float = Field(title="Обводненности, доли", ge=0, le=1)
     Rp: int = Field(title="Газовый фактор, м3/т", gt=0)
     QLiq: float = Field(title="Объем жидкости, м3", gt=0)
 
